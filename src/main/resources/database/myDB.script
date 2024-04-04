@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 2030
+SET FILES CHECK 9272
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -58,3 +58,6 @@ INSERT INTO "flyway_schema_history" VALUES(1,'1','create table events','SQL','V1
 INSERT INTO "flyway_schema_history" VALUES(2,'2','create table attendees','SQL','V2__create_table_attendees.sql',1612960147,'SA','2024-04-02 07:11:46.134248',2,'1')
 INSERT INTO "flyway_schema_history" VALUES(3,'3','create table checkins','SQL','V3__create_table_checkins.sql',277259538,'SA','2024-04-02 07:11:46.143475',1,'1')
 INSERT INTO "flyway_schema_history" VALUES(4,'4','create indexes','SQL','V4__create_indexes.sql',553901455,'SA','2024-04-02 07:11:46.152334',1,'1')
+INSERT INTO EVENTS VALUES('022ccebe-7fa1-4dcf-a2b7-4bcd2e8a8fe3','Rocketseat NLW','Aprenda Java de forma gratuita','',500)
+INSERT INTO EVENTS VALUES('fafa6811-ca31-4180-8794-dcc8c8b91964','Rocketseat NLW Unite','Aprenda Java de forma gratuita','rocketseat-nlw-unite',500)
+INSERT INTO ATTENDEES VALUES('fafa6811-ca31-4180-8794-dcc8c8b91964','Jardel Bordignon','jardel@bordignon.dev','fafa6811-ca31-4180-8794-dcc8c8b91964','2024-04-02 07:11:46.143475')
